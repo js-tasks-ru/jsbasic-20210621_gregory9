@@ -3,16 +3,16 @@ function highlight(table) {
   let rows = Array.from(table.rows).slice(1);
   for (let row of rows) {
 
-    if (row.cells[3].dataset.available === undefined) {
+    if (row.cells[3].dataset.available == undefined) {
       row.hidden = true;
     }
 
-    if (row.cells[3].dataset.available !== undefined
+    if (row.cells[3].dataset.available != undefined
       && row.cells[3].dataset.available == 'true') {
       row.classList.add('available');
     }
 
-    if (row.cells[3].dataset.available !== undefined
+    if (row.cells[3].dataset.available != undefined
       && row.cells[3].dataset.available == 'false') {
       row.classList.add('unavailable');
     }
