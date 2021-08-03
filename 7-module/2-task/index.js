@@ -67,5 +67,5 @@ export default class Modal {
     document.removeEventListener('keydown', this._keydownEventListener);
     document.body.classList.remove('is-modal-open');
     this.elem.remove();
-  }
+  }  
 }
